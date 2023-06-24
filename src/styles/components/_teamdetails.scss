@@ -1,0 +1,129 @@
+.team__details {
+  background-color: $redishgray;
+
+  .acknlgmnt {
+    h3 {
+      color: $darkgray;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    ol {
+      padding: 1rem 0 3rem 1.3rem;
+
+      li {
+        padding: 3px 0;
+      }
+    }
+  }
+
+  .adding {
+    p {
+      color: #6C7172;
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .members__list {
+      margin-bottom: 3rem;
+      max-height: 150px;
+      overflow-y: scroll;
+
+      .single__member {
+        @include flex-horizontal;
+        gap: 24px;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $lightgray;
+        }
+
+        &>.thumb {
+          @include flex-center;
+          background-color: #DEDEDE;
+          font-size: 24px;
+          font-weight: 700;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+        }
+
+        .details {
+          h6 {
+            font-size: 20px;
+          }
+
+          p {
+            color: $darkgray;
+            font-size: 20px;
+            margin-top: 12px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  .intro {
+    margin-top: 48px;
+    border: 1px solid $primary;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $lightgray;
+    height: 650px;
+
+    h2 {
+      color: #3a3a3a;
+      font-size: 2rem;
+    }
+
+    p {
+      color: gray;
+      font-size: 20px;
+    }
+
+    .grid__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr; // Change to a single column on smaller screens
+      }
+
+      .item {
+        .action>button {
+          margin-top: 2rem;
+          background-color: $white;
+          padding: 10px 20px;
+          border-radius: 6px;
+          border: 2px solid $lightgray;
+          box-shadow: 0px 4px 10px rgba(10, 106, 246, 0.1);
+          ;
+
+        }
+
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.team__button__container {
+  display: flex;
+  gap: 24px;
+
+  .status {
+    background: #FFFFFF;
+    border: 2px solid rgba(76, 84, 248, 0.3);
+    border-radius: 12px;
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(76, 84, 248, 0.3);
+  }
+}

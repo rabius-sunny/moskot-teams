@@ -1,0 +1,116 @@
+.login {
+  @include flex-center;
+  height: 100vh;
+  background-color: #FEFEFE;
+
+  h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 4rem 0;
+    color: red;
+  }
+
+  &__intro {
+    text-align: center;
+
+    img {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 2rem;
+      line-height: 56px;
+      margin-bottom: 20px;
+    }
+
+    .actions {
+      @include flex-horizontal;
+      justify-content: center;
+      gap: 2rem;
+
+      &>button {
+        background: #533FF0;
+        padding: 16px 24px;
+        border: 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #FEFEFE;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  &__form {
+    text-align: center;
+    width: 430px;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #606060;
+      font-weight: normal;
+      margin-bottom: 40px;
+
+      &>span {
+        font-weight: 800 !important;
+      }
+    }
+
+    input {
+      border: 1px solid $indigo;
+      border-radius: 4px;
+      padding: 24px;
+      font-size: 24px;
+      display: block;
+      width: 100%;
+      margin-bottom: 24px;
+
+      &::placeholder {
+        color: rgba(82, 66, 240, 0.3);
+
+      }
+    }
+
+    .forget {
+      margin-bottom: 35px;
+
+      &>a {
+        font-size: 24px;
+        color: $lighttext;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    button {
+      border: 0;
+      background: $indigo;
+      font-size: 24px;
+      color: $white;
+      width: 100%;
+      padding: 24px 0;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 24px;
+      color: #606060;
+
+      &>span {
+        color: $darkgray;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

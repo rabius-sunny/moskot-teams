@@ -1,0 +1,54 @@
+.header__top {
+  background: $redishgray;
+
+  .nav {
+    @include flex-horizontal;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    .items__container {
+      @include flex-horizontal;
+
+      .items {
+        @include flex-horizontal;
+        gap: 30px;
+      }
+
+      .options {
+        @include flex-horizontal;
+        gap: 30px;
+        margin-left: 30px;
+
+        .option {
+          border: 1px solid $darkgray;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.header__bottom {
+  display: flex;
+  padding-top: 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: rgba(32, 32, 32, 0.6);
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 24px;
+  }
+
+  .button__container {
+    display: flex;
+    gap: 24px;
+  }
+}

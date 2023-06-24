@@ -1,0 +1,31 @@
+.teams {
+  display: flex;
+  gap: 56px;
+
+  .team {
+    padding: 40px 32px;
+    color: #202020;
+    border: 1px solid $primary;
+    border-radius: 12px;
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 12px;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    h6 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 250px;
+      color: $black;
+    }
+  }
+}

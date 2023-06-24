@@ -1,0 +1,86 @@
+.members {
+  background-color: $redishgray;
+  min-height: 90vh;
+  padding: 80px 0;
+
+  .table__container {
+    border: 1px solid $primary;
+    background-color: $white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 1242px;
+    margin: auto;
+
+    .row {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      border: 1px solid #3267B1;
+      border-radius: 10px;
+      margin-bottom: 4px;
+
+      &.header {
+        font-weight: 700;
+        font-size: 24px;
+        border: 0;
+        padding-top: 0;
+        color: #202020;
+      }
+
+      &.body {
+        .thumb {
+          height: 60px;
+          width: 60px;
+          border: 2px solid $darkgray;
+          color: #3267B1;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+
+        .column {
+          color: $lighttext;
+
+          &:nth-child(2) {
+            h2 {
+              font-size: 24px;
+              margin-bottom: .5rem;
+              color: #202020;
+            }
+          }
+
+          small {
+            font-size: 1rem;
+            color: $lighttext;
+            font-weight: 400;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .column {
+        flex: 1;
+
+        &:nth-child(1) {
+          flex: 0.5;
+        }
+
+        &:nth-child(2) {
+          flex: 1.8;
+        }
+
+        &:last-child {
+          flex: 0;
+          display: flex;
+          gap: 2rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
